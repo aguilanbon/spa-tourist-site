@@ -3,7 +3,7 @@
 // font-family: 'Prompt', sans-serif;
 // font-family: 'Varela Round', sans-serif;
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,79 +20,107 @@ span {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    background: url('../images/coron.jpg');
-    background-position: center;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
+    height: auto;
+    width: auto;
 
-    .navbar {
+    .landing-page__container {
+        width: auto;
+        height: 98vh;
+        background: url('../images/coron.jpg');
+        background-position: center;
+        object-fit: cover;
         display: flex;
-        font-family: 'Varela Round', sans-serif;
-        width: 100%;
-        justify-content: flex-end;
-        font-size: 1.2rem;
+        flex-direction: column;
 
-        ul {
+        .navbar {
             display: flex;
-
-            li {
-                list-style: none;
-                margin: 1rem 1.5rem;
-            }
-            a {
-                text-decoration: none;
-                color: white;
-                transition: .3s ease-out;
-            }
-
-            a:hover {
-                border-bottom: 2px solid orange;
-                font-size: 1.23rem;
-            }
-        }
-
-    }
-
-    .hero-container {
-        display: flex;
-        flex-direction: row;
-        color: white;
-        height: 100%;
-
-        .hero__text {
-            width: 50%;
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
             font-family: 'Varela Round', sans-serif;
-            justify-content: center;
-            border-left: .5rem solid orange;
+            justify-content: flex-end;
+            font-size: 1.2rem;
 
-            .hero__text__heading {
-                
+            ul {
+                display: flex;
 
-                h3 {
-                    font-size: 12em;
-                    margin-left: .4em;
+                li {
+                    list-style: none;
+                    margin: 1rem 1.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: .3s ease-out;
+                }
+
+                a:hover {
+                    border-bottom: 2px solid orange;
+                    font-size: 1.23rem;
                 }
             }
 
-            .hero__text__subheading {
-                
-                p {
-                    font-size: 2.5em;
-                    margin-left: 2.2em;
-                    letter-spacing: .2em;
+        }
+
+        .hero-container {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            height: 100vh;
+
+            .hero__text {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Varela Round', sans-serif;
+                justify-content: center;
+                border-left: .5rem solid orange;
+
+                .hero__text__heading {
+                    h3 {
+                        font-size: 12em;
+                        margin-left: .4em;
+                    }
+                }
+
+                .hero__text__subheading {
+                    p {
+                        font-size: 2.5em;
+                        margin-left: 2.2em;
+                        letter-spacing: .2em;
+                    }
+                }
+            }
+
+            .hero__images {
+                // width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                .gallery__white {
+                    width: 200px;
+                    padding: 1em 1em 6em 1em;
+                    background-color: rgb(235, 233, 233);
+                    transform: rotate(-10deg);
+                    margin-right: -7em;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                .gallery__white2 {
+                    width: 200px;
+                    padding: 1em 1em 6em 1em;
+                    background-color: rgb(235, 233, 233);
+                    transform: rotate(10deg);
+
+                    img {
+                        width: 200px;
+                    }
                 }
             }
         }
 
-        .hero__images {
-            width: 50%;
-        }
     }
-
 }
