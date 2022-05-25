@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&family=Varela+Round&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+}
+
+span {
+  color: orange;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/coron.jpg");
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+.container .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .navbar ul li {
+  list-style: none;
+  margin: 1rem 1.5rem;
+}
+
+.container .navbar ul a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.container .navbar ul a:hover {
+  border-bottom: 2px solid orange;
+  font-size: 1.23rem;
+}
+
+.container .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  height: 100%;
+}
+
+.container .hero-container .hero__text {
+  width: 50%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: .5rem solid orange;
+}
+
+.container .hero-container .hero__text .hero__text__heading h3 {
+  font-size: 12em;
+  margin-left: .4em;
+}
+
+.container .hero-container .hero__text .hero__text__subheading p {
+  font-size: 2.5em;
+  margin-left: 2.2em;
+  letter-spacing: .2em;
+}
+
+.container .hero-container .hero__images {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
