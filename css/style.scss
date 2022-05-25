@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&family=Shadows+Into+Light&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Prompt:wght@200;400&family=Shadows+Into+Light&family=Varela+Round&display=swap');;
 
 // font-family: 'Prompt', sans-serif;
 // font-family: 'Varela Round', sans-serif;
 // font-family: 'Shadows Into Light', cursive;
+// font-family: 'Open Sans', sans-serif;
 
 body {
     margin: 0;
@@ -26,7 +27,7 @@ span {
 
     .landing-page__container {
         width: auto;
-        height: 98vh;
+        height: 100vh;
         background: url('../images/coron.jpg');
         background-position: center;
         object-fit: cover;
@@ -35,9 +36,9 @@ span {
 
         .navbar {
             display: flex;
-            font-family: 'Varela Round', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             justify-content: flex-end;
-            font-size: 1.2rem;
+            font-size: .9rem;
 
             ul {
                 display: flex;
@@ -55,7 +56,7 @@ span {
 
                 a:hover {
                     border-bottom: 2px solid orange;
-                    font-size: 1.23rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -73,9 +74,11 @@ span {
                 flex-direction: column;
                 font-family: 'Varela Round', sans-serif;
                 justify-content: center;
-                border-left: .5rem solid orange;
+                // border-left: .5rem solid orange;
 
                 .hero__text__heading {
+                    background-color: rgba(214, 208, 208, .3);
+
                     h3 {
                         font-size: 12em;
                         margin-left: .4em;
@@ -86,7 +89,15 @@ span {
                     p {
                         font-size: 2.5em;
                         margin-left: 2.2em;
-                        letter-spacing: .2em;
+                        letter-spacing: .1em;
+                    }
+
+                    #sub-sub__heading {
+                        font-size: .9rem;
+                        // margin-top: .5em;
+                        margin-left: 3.9em;
+                        width: 40ch;
+                        letter-spacing: .05em;
                     }
                 }
             }
@@ -103,7 +114,7 @@ span {
 
                 .hero__photo {
                     width: 200px;
-                    padding: 1em 1em 6em 1em;
+                    padding: 1em 1em 4em 1em;
                     background-color: rgb(235, 233, 233);
                     transform: rotate(-10deg);
                     margin-right: -7em;
@@ -115,9 +126,10 @@ span {
 
                 .hero__photo2 {
                     width: 200px;
-                    padding: 1em 1em 6em 1em;
+                    padding: 1em 1em 4em 1em;
                     background-color: rgb(235, 233, 233);
                     transform: rotate(10deg);
+                    margin-left: 2em;
 
                     img {
                         width: 200px;
@@ -126,5 +138,9 @@ span {
             }
         }
 
+    }
+
+    .gallery-container {
+        // height: 100vh;
     }
 }
