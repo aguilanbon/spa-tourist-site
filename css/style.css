@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&family=Shadows+Into+Light&family=Varela+Round&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -120,9 +120,12 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  font-family: 'Shadows Into Light', cursive;
+  color: #181717;
+  text-align: center;
 }
 
-.container .landing-page__container .hero-container .hero__images .gallery__white {
+.container .landing-page__container .hero-container .hero__images .hero__photo {
   width: 200px;
   padding: 1em 1em 6em 1em;
   background-color: #ebe9e9;
@@ -131,11 +134,11 @@ span {
   margin-right: -7em;
 }
 
-.container .landing-page__container .hero-container .hero__images .gallery__white img {
+.container .landing-page__container .hero-container .hero__images .hero__photo img {
   width: 200px;
 }
 
-.container .landing-page__container .hero-container .hero__images .gallery__white2 {
+.container .landing-page__container .hero-container .hero__images .hero__photo2 {
   width: 200px;
   padding: 1em 1em 6em 1em;
   background-color: #ebe9e9;
@@ -143,7 +146,7 @@ span {
           transform: rotate(10deg);
 }
 
-.container .landing-page__container .hero-container .hero__images .gallery__white2 img {
+.container .landing-page__container .hero-container .hero__images .hero__photo2 img {
   width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
