@@ -162,9 +162,8 @@ span {
 }
 
 .container .gallery-container {
-  height: 100vh;
-  padding: 3em;
-  background-color: rgba(0, 0, 0, 0.1);
+  height: 80vh;
+  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,14 +171,75 @@ span {
 
 .container .gallery-container .testimonial-container {
   width: 40%;
-  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.container .gallery-container .testimonial-container h2 {
+  font-size: 2.5rem;
+  width: 15ch;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container .gallery-container .testimonial-container span {
+  opacity: .7;
+  text-decoration: underline;
+}
+
+.container .gallery-container .testimonial-container i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.container .gallery-container .testimonial-container .author {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 2em;
+}
+
+.container .gallery-container .testimonial-container .author p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.container .gallery-container .testimonial-container .author #title {
+  font-size: 1.1em;
+  opacity: .8;
 }
 
 .container .gallery-container .carousel-container {
-  height: 100%;
   width: 60%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.06);
   position: relative;
+}
+
+.container .gallery-container .carousel-container ul {
+  list-style-type: none;
 }
 
 .container .footer-container {

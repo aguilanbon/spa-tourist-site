@@ -142,21 +142,63 @@ span {
     }
 
     .gallery-container {
-        height: 100vh;
-        padding: 3em;
-        background-color: rgba(0,0,0,.1);
+        height: 80vh;
+        padding: 2em;
         display: flex;
 
         .testimonial-container {
             width: 40%;
-            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, .06);
+
+            h2 {
+                font-size: 2.5rem;
+                width: 15ch;
+                color: rgba(0, 0, 0, .8);
+            }
+            span {
+                opacity: .7;
+                text-decoration: underline;
+            }
+
+            i {
+                color: rgba(0, 0, 0, .6);
+            }
+
+            .author {
+                width: 100%;
+                display: flex;
+                // align-items: center;
+                align-items: flex-end;
+                justify-content: flex-end;
+                flex-direction: column;
+                padding-right: 2em;
+
+                p  {
+                    font-size: 1.5em;
+                    line-height: 1.5em;
+                }
+
+                #title {
+                    font-size: 1.1em;
+                    opacity: .8;
+                }
+            }
         }
 
         .carousel-container {
-            height: 100%;
             width: 60%;
-            background-color: black;
+            background-color: rgba(0, 0, 0, .06);
             position: relative;
+
+            ul {
+                list-style-type: none;
+            }
         }
     }
 
