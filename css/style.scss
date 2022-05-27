@@ -159,9 +159,10 @@ span {
 
             h2 {
                 font-size: 2.5rem;
-                width: 15ch;
+                min-width: 15ch;
                 color: rgba(0, 0, 0, .8);
             }
+
             span {
                 opacity: .7;
                 text-decoration: underline;
@@ -179,7 +180,7 @@ span {
                 flex-direction: column;
                 padding-right: 2em;
 
-                p  {
+                p {
                     font-size: 1.5em;
                     line-height: 1.5em;
                 }
@@ -324,7 +325,7 @@ span {
                 height: auto;
 
                 p {
-                    width: 45ch;
+                    max-width: 45ch;
                     font-size: 1.2em;
                     line-height: 1.6em;
                     color: rgb(59, 57, 57);
@@ -351,5 +352,62 @@ span {
         padding: 1em;
         font-family: 'Varela Round', sans-serif;
         background-color: rgba(122, 122, 122, 0.1);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .container {
+        .landing-page__container {
+            .hero-container {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                .hero__text {
+                    height: 50%;
+                }
+
+                .hero__images {
+                    height: 50%;
+                }
+            }
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .testimonial-container {
+                text-align: center;
+                border-radius: 1.5em;
+                width: 100%;
+
+                .author {
+                    padding-top: 2em;
+                    align-items: center;
+                }
+            }
+
+            .carousel-container {
+                width: 90%;
+            }
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+
+            .about-container {
+                width: 100%;
+            }
+
+            .contact-container {
+                display: flex;
+                width: auto;
+            }
+        }
+
     }
 }

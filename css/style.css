@@ -194,7 +194,7 @@ span {
 
 .container .gallery-container .testimonial-container h2 {
   font-size: 2.5rem;
-  width: 15ch;
+  min-width: 15ch;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -391,7 +391,7 @@ span {
 }
 
 .container .footer-container .contact-container .info-container p {
-  width: 45ch;
+  max-width: 45ch;
   font-size: 1.2em;
   line-height: 1.6em;
   color: #3b3939;
@@ -414,5 +414,71 @@ span {
   padding: 1em;
   font-family: 'Varela Round', sans-serif;
   background-color: rgba(122, 122, 122, 0.1);
+}
+
+@media only screen and (max-width: 769px) {
+  .container .landing-page__container .hero-container {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .landing-page__container .hero-container .hero__text {
+    height: 50%;
+  }
+  .container .landing-page__container .hero-container .hero__images {
+    height: 50%;
+  }
+  .container .gallery-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .gallery-container .testimonial-container {
+    text-align: center;
+    border-radius: 1.5em;
+    width: 100%;
+  }
+  .container .gallery-container .testimonial-container .author {
+    padding-top: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .gallery-container .carousel-container {
+    width: 90%;
+  }
+  .container .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .footer-container .about-container {
+    width: 100%;
+  }
+  .container .footer-container .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
