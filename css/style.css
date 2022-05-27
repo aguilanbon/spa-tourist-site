@@ -161,6 +161,27 @@ span {
   width: 200px;
 }
 
+.container .gallery-container {
+  height: 100vh;
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .gallery-container .testimonial-container {
+  width: 40%;
+  height: 100%;
+}
+
+.container .gallery-container .carousel-container {
+  height: 100%;
+  width: 60%;
+  background-color: black;
+  position: relative;
+}
+
 .container .footer-container {
   height: auto;
   background-color: white;
@@ -201,8 +222,12 @@ span {
 
 .container .footer-container .about-container .footer-box p {
   font-size: 1.2em;
-  padding: .7em 0;
+  padding: .4em 0;
   opacity: .7;
+}
+
+.container .footer-container .about-container .footer-box i {
+  margin-right: .5em;
 }
 
 .container .footer-container .contact-container {
