@@ -160,4 +160,105 @@ span {
 .container .landing-page__container .hero-container .hero__images .hero__photo2 img {
   width: 200px;
 }
+
+.container .footer-container {
+  height: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.container .footer-container h3 {
+  color: #ff8f25;
+  margin-bottom: .7em;
+  font-size: .9rem;
+}
+
+.container .footer-container .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  padding: 2em 0;
+}
+
+.container .footer-container .about-container .footer-box {
+  width: 33%;
+  padding: 0 2em;
+}
+
+.container .footer-container .about-container .footer-box h3 {
+  border-bottom: 1px solid orange;
+  width: auto;
+}
+
+.container .footer-container .about-container .footer-box p {
+  font-size: 1.2em;
+  padding: .7em 0;
+  opacity: .7;
+}
+
+.container .footer-container .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 6em 2em 2em;
+  width: 30%;
+  height: auto;
+  background-color: orange;
+  color: white;
+  border-radius: 1em;
+}
+
+.container .footer-container .contact-container h3 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.container .footer-container .contact-container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+.container .footer-container .contact-container .info-container p {
+  width: 45ch;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.container .footer-container .contact-container .info-container .contacts {
+  margin-top: 1.2em;
+}
+
+.container .footer-container .contact-container .info-container .contacts p {
+  padding: .2em 0;
+}
+
+.container .footer-container .contact-container .info-container .contacts i {
+  margin-right: 2em;
+}
+
+.container footer {
+  text-align: center;
+  padding: 1em;
+  font-family: 'Varela Round', sans-serif;
+  background-color: rgba(122, 122, 122, 0.1);
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Prompt:wght@200;400&family=Shadows+Into+Light&family=Varela+Round&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Prompt:wght@200;400&family=Shadows+Into+Light&family=Varela+Round&display=swap');
+;
 
 // font-family: 'Prompt', sans-serif;
 // font-family: 'Varela Round', sans-serif;
@@ -142,5 +143,89 @@ span {
 
     .gallery-container {
         // height: 100vh;
+    }
+
+    .footer-container {
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        padding: 3em;
+        font-family: 'Varela Round', sans-serif;
+
+        h3 {
+            color: rgb(255, 143, 37);
+            margin-bottom: .7em;
+            font-size: .9rem;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            padding: 2em 0;
+
+            .footer-box {
+                width: 33%;
+                padding: 0 2em;
+
+                h3 {
+                    border-bottom: 1px solid orange;
+                    width: auto;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    padding: .7em 0;
+                    opacity: .7;
+                }
+            }
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            padding: 2em 6em 2em 2em;
+            width: 30%;
+            height: auto;
+            background-color: orange;
+            color: white;
+            border-radius: 1em;
+
+            h3 {
+                color: white;
+                border-bottom: 1px solid white;
+            }
+
+            .info-container {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+                p {
+                    width: 45ch;
+                    font-size: 1.2em;
+                    line-height: 1.6em;
+                }
+
+                .contacts {
+                    margin-top: 1.2em;
+
+                    p {
+                        padding: .2em 0;
+                    }
+                    i {
+                        margin-right: 2em;
+                    }
+                }
+            }
+        }
+
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        font-family: 'Varela Round', sans-serif;
+        background-color: rgba(122, 122, 122, 0.1);
     }
 }
