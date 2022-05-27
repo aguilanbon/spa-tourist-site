@@ -147,6 +147,7 @@ span {
         display: flex;
 
         .testimonial-container {
+            border-radius: 1.5em;
             width: 40%;
             font-family: 'Open Sans', sans-serif;
             padding: 2em;
@@ -154,7 +155,7 @@ span {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgba(0, 0, 0, .06);
+            // background-color: rgba(0, 0, 0, .06);
 
             h2 {
                 font-size: 2.5rem;
@@ -173,7 +174,6 @@ span {
             .author {
                 width: 100%;
                 display: flex;
-                // align-items: center;
                 align-items: flex-end;
                 justify-content: flex-end;
                 flex-direction: column;
@@ -193,12 +193,64 @@ span {
 
         .carousel-container {
             width: 60%;
-            background-color: rgba(0, 0, 0, .06);
             position: relative;
+            height: 100%;
+            border-radius: 1em;
+            background-color: rgba(0, 0, 0, .1);
+
 
             ul {
                 list-style-type: none;
             }
+
+            .slide {
+                position: absolute;
+                inset: 0;
+                top: 5%;
+                opacity: 0;
+                transition: 200ms opacity ease-in-out;
+                padding: 0 8em;
+            }
+
+            .slide[data-active] {
+                opacity: 1;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 426.67px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 1em;
+            }
+
+            button {
+                position: absolute;
+                cursor: pointer;
+                height: 100%;
+                width: 3em;
+                z-index: 999;
+                border: none;
+                background-color: rgba(0, 0, 0, 0);
+                color: orange;
+                font-size: 3em;
+            }
+
+            button:hover {
+                color: white;
+                outline: none;
+                background-color: rgba(0, 0, 0, .1);
+            }
+
+            #prev {
+                left: 0;
+            }
+
+            #next {
+                right: 0;
+            }
+
         }
     }
 
@@ -208,9 +260,10 @@ span {
         display: flex;
         padding: 3em;
         font-family: 'Varela Round', sans-serif;
+        background-color: orange;
 
         h3 {
-            color: rgb(255, 143, 37);
+            color: white;
             margin-bottom: .7em;
             font-size: .9rem;
         }
@@ -226,14 +279,15 @@ span {
                 padding: 0 2em;
 
                 h3 {
-                    border-bottom: 1px solid orange;
+                    border-bottom: 1px solid white;
                     width: auto;
                 }
 
                 p {
                     font-size: 1.2em;
                     padding: .4em 0;
-                    opacity: .7;
+                    opacity: .9;
+                    color: white;
                 }
 
                 i {
@@ -248,13 +302,13 @@ span {
             padding: 2em 6em 2em 2em;
             width: 30%;
             height: auto;
-            background-color: orange;
-            color: white;
+            background-color: white;
+            color: orange;
             border-radius: 1em;
 
             h3 {
-                color: white;
-                border-bottom: 1px solid white;
+                color: orange;
+                border-bottom: 1px solid orange;
             }
 
             .info-container {
@@ -266,6 +320,7 @@ span {
                     width: 45ch;
                     font-size: 1.2em;
                     line-height: 1.6em;
+                    color: rgb(59, 57, 57);
                 }
 
                 .contacts {

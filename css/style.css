@@ -170,6 +170,7 @@ span {
 }
 
 .container .gallery-container .testimonial-container {
+  border-radius: 1.5em;
   width: 40%;
   font-family: 'Open Sans', sans-serif;
   padding: 2em;
@@ -186,7 +187,6 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .container .gallery-container .testimonial-container h2 {
@@ -234,12 +234,65 @@ span {
 
 .container .gallery-container .carousel-container {
   width: 60%;
-  background-color: rgba(0, 0, 0, 0.06);
   position: relative;
+  height: 100%;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .container .gallery-container .carousel-container ul {
   list-style-type: none;
+}
+
+.container .gallery-container .carousel-container .slide {
+  position: absolute;
+  inset: 0;
+  top: 5%;
+  opacity: 0;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  padding: 0 8em;
+}
+
+.container .gallery-container .carousel-container .slide[data-active] {
+  opacity: 1;
+}
+
+.container .gallery-container .carousel-container img {
+  display: block;
+  width: 100%;
+  height: 426.67px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1em;
+}
+
+.container .gallery-container .carousel-container button {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 3em;
+  z-index: 999;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: orange;
+  font-size: 3em;
+}
+
+.container .gallery-container .carousel-container button:hover {
+  color: white;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container .gallery-container .carousel-container #prev {
+  left: 0;
+}
+
+.container .gallery-container .carousel-container #next {
+  right: 0;
 }
 
 .container .footer-container {
@@ -250,10 +303,11 @@ span {
   display: flex;
   padding: 3em;
   font-family: 'Varela Round', sans-serif;
+  background-color: orange;
 }
 
 .container .footer-container h3 {
-  color: #ff8f25;
+  color: white;
   margin-bottom: .7em;
   font-size: .9rem;
 }
@@ -276,14 +330,15 @@ span {
 }
 
 .container .footer-container .about-container .footer-box h3 {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid white;
   width: auto;
 }
 
 .container .footer-container .about-container .footer-box p {
   font-size: 1.2em;
   padding: .4em 0;
-  opacity: .7;
+  opacity: .9;
+  color: white;
 }
 
 .container .footer-container .about-container .footer-box i {
@@ -301,14 +356,14 @@ span {
   padding: 2em 6em 2em 2em;
   width: 30%;
   height: auto;
-  background-color: orange;
-  color: white;
+  background-color: white;
+  color: orange;
   border-radius: 1em;
 }
 
 .container .footer-container .contact-container h3 {
-  color: white;
-  border-bottom: 1px solid white;
+  color: orange;
+  border-bottom: 1px solid orange;
 }
 
 .container .footer-container .contact-container .info-container {
@@ -326,6 +381,7 @@ span {
   width: 45ch;
   font-size: 1.2em;
   line-height: 1.6em;
+  color: #3b3939;
 }
 
 .container .footer-container .contact-container .info-container .contacts {
