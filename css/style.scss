@@ -164,7 +164,6 @@ span {
 
             span {
                 opacity: .7;
-                text-decoration: underline;
             }
 
             i {
@@ -287,7 +286,6 @@ span {
 
                 h3 {
                     border-bottom: 1px solid white;
-                    width: auto;
                 }
 
                 p {
@@ -306,7 +304,7 @@ span {
         .contact-container {
             display: flex;
             flex-direction: column;
-            padding: 2em 6em 2em 2em;
+            padding: 2em;
             width: 30%;
             height: auto;
             background-color: white;
@@ -324,7 +322,7 @@ span {
                 height: auto;
 
                 p {
-                    max-width: 45ch;
+                    // max-width: 45ch;
                     font-size: 1.2em;
                     line-height: 1.6em;
                     color: rgb(59, 57, 57);
@@ -430,6 +428,13 @@ span {
                 text-align: center;
                 border-radius: 1.5em;
                 width: 100%;
+                h2 {
+                    font-size: 2.5em;
+                }
+                
+                span {
+                    font-size: 1.8em;
+                }
 
                 .author {
                     padding-top: 2em;
@@ -510,5 +515,137 @@ span {
             }
         }
 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        .landing-page__container {
+            .hero-container {
+                .hero__text {
+                    width: 100%;
+                    .hero__text__heading {
+                        font-size: .7em;
+                        text-align: center;
+
+                        h3 {
+                            margin-left: 0;
+                        }
+                    }
+                    .hero__text__subheading {
+                        text-align: center;
+                        p {
+                            text-align: center;
+                            margin-left: 0;
+                        }
+                        #sub-sub__heading {
+                            text-align: center;
+                            margin-left: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .gallery-container {
+            .carousel-container {
+                width: 90vw;
+                
+                ul {
+                    height: 300px;
+                }
+            }
+        }
+
+        .footer-container {
+            width: auto;
+            .about-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .footer-box {
+                    width: 80%;
+                    margin-top: 2.5em;
+
+                    p {
+                        font-size: 1em;
+                        padding-left: 2em;
+                    }
+                }
+            }
+            .contact-container {
+                .info-container {
+                    p {
+                        min-width: 100%;
+                    }
+                }
+                .info-container {
+                    p {
+                        font-size: 1em;
+                    }
+                    .contacts {
+                        font-size: .7em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        .landing-page__container {
+            height: 100vh;
+            padding-bottom: 4em;
+            padding-bottom: 6em;
+
+            .hero-container {
+                height: 60vh;
+                display: flex;
+
+                .hero__text {
+                    .hero__text__heading {
+                        h3 {
+                            font-size: 7em;
+                        }
+                    }
+                    .hero__text__subheading {
+                        p {
+                            font-size: 1.2em;
+                        }
+                        #sub-sub__heading {
+                            font-size: .8em;
+                        }
+                    }
+                }
+
+                .hero__images {
+                    height: auto;
+                }
+
+                .hero__images {
+                    h2 {
+                        font-size: .7em;
+                    }
+                    .hero__photo {
+                        width: 100px;
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+
+                    .hero__photo2 {
+                        width: 100px;
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
