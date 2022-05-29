@@ -75,7 +75,6 @@ span {
                 flex-direction: column;
                 font-family: 'Varela Round', sans-serif;
                 justify-content: center;
-                // border-left: .5rem solid orange;
 
                 .hero__text__heading {
                     background-color: rgba(214, 208, 208, .3);
@@ -355,20 +354,118 @@ span {
     }
 }
 
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: auto;
+
+        .landing-page__container {
+            height: auto;
+            padding-bottom: 4em;
+
+            .hero-container {
+                height: 60vh;
+                display: flex;
+                .hero__text {
+
+                .hero__text__heading {
+                    background-color: rgba(214, 208, 208, .3);
+
+                    h3 {
+                        font-size: 9em;
+                        margin-left: .4em;
+                    }
+                }
+
+                .hero__text__subheading {
+                    p {
+                        font-size: 1.8em;
+                        margin-left: 2.2em;
+                        letter-spacing: .1em;
+                    }
+
+                    #sub-sub__heading {
+                        font-size: .7rem;
+                        margin-left: 3.9em;
+                        width: 40ch;
+                        letter-spacing: .05em;
+                    }
+                }
+            }
+
+                .hero__images {
+                    height: auto;
+                }
+
+                .hero__images {
+
+                    .hero__photo {
+                        width: 150px;
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+
+                    .hero__photo2 {
+                        width: 150px;
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            padding: 0 4em;
+
+            .testimonial-container {
+                text-align: center;
+                border-radius: 1.5em;
+                width: 100%;
+
+                .author {
+                    padding-top: 2em;
+                    align-items: center;
+                }
+            }
+
+            .carousel-container {
+                width: 90%;
+                height: 50%;
+            }
+        }
+
+    }
+}
+
+
 @media only screen and (max-width: 769px) {
     .container {
         .landing-page__container {
+            height: auto;
             .hero-container {
                 height: auto;
                 display: flex;
                 flex-direction: column;
 
                 .hero__text {
-                    height: 50%;
+                    height: 50vh;
                 }
 
                 .hero__images {
-                    height: 50%;
+                    height: auto;
+                    padding-bottom: 4em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
                 }
             }
         }
