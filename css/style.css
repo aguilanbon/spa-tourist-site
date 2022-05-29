@@ -477,8 +477,8 @@ span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 60vh;
-    padding: 0 4em;
+    height: auto;
+    padding: 4em;
   }
   .container .gallery-container .testimonial-container {
     text-align: center;
@@ -492,8 +492,11 @@ span {
             align-items: center;
   }
   .container .gallery-container .carousel-container {
-    width: 90%;
-    height: 50%;
+    width: 85%;
+    height: 100%;
+  }
+  .container .gallery-container .carousel-container ul {
+    height: 350px;
   }
 }
 
