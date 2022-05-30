@@ -25,6 +25,59 @@ span {
 .container {
     height: auto;
     width: auto;
+    position: relative;
+
+    .mobile-nav__container {
+        position: absolute;
+        z-index: 999;
+        background-color: rgba(26, 26, 26, .9);
+        width: 100%;
+        height: 100%;
+        display: none;
+
+        i {
+            font-size: 3em;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            cursor: pointer;
+            position: absolute;
+            top: .4em;
+            right: .4em;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 4em;
+            padding: 0;
+
+            li {
+                width: 100%;
+                margin: 2em 0;
+
+                a {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    text-decoration: none;
+                    color: white;
+
+                }
+
+                :hover {
+                    color: orange;
+                }
+            }
+
+            li:hover {
+                background-color: rgba(0, 0, 0, .6);
+            }
+        }
+    }
+
 
     .landing-page__container {
         width: auto;
@@ -61,6 +114,23 @@ span {
                 }
             }
 
+        }
+
+        .mobile-nav {
+            // display: none;
+            margin-left: auto;
+
+            i {
+                font-size: 3em;
+                color: orange;
+                cursor: pointer;
+                margin-right: .5em;
+                margin-top: .5em;
+            }
+
+            :hover {
+                color: rgb(255, 81, 0);
+            }
         }
 
         .hero-container {
@@ -236,7 +306,7 @@ span {
                 cursor: pointer;
                 height: 100%;
                 width: 3em;
-                z-index: 999;
+                z-index: 2;
                 border: none;
                 background-color: rgba(0, 0, 0, 0);
                 color: orange;
@@ -364,32 +434,33 @@ span {
             .hero-container {
                 height: 60vh;
                 display: flex;
+
                 .hero__text {
 
-                .hero__text__heading {
-                    background-color: rgba(214, 208, 208, .3);
+                    .hero__text__heading {
+                        background-color: rgba(214, 208, 208, .3);
 
-                    h3 {
-                        font-size: 9em;
-                        margin-left: .4em;
+                        h3 {
+                            font-size: 9em;
+                            margin-left: .4em;
+                        }
+                    }
+
+                    .hero__text__subheading {
+                        p {
+                            font-size: 1.8em;
+                            margin-left: 2.2em;
+                            letter-spacing: .1em;
+                        }
+
+                        #sub-sub__heading {
+                            font-size: .7rem;
+                            margin-left: 3.9em;
+                            width: 40ch;
+                            letter-spacing: .05em;
+                        }
                     }
                 }
-
-                .hero__text__subheading {
-                    p {
-                        font-size: 1.8em;
-                        margin-left: 2.2em;
-                        letter-spacing: .1em;
-                    }
-
-                    #sub-sub__heading {
-                        font-size: .7rem;
-                        margin-left: 3.9em;
-                        width: 40ch;
-                        letter-spacing: .05em;
-                    }
-                }
-            }
 
                 .hero__images {
                     height: auto;
@@ -428,10 +499,11 @@ span {
                 text-align: center;
                 border-radius: 1.5em;
                 width: 100%;
+
                 h2 {
                     font-size: 2.5em;
                 }
-                
+
                 span {
                     font-size: 1.8em;
                 }
@@ -460,6 +532,7 @@ span {
     .container {
         .landing-page__container {
             height: auto;
+
             .hero-container {
                 height: auto;
                 display: flex;
@@ -519,11 +592,25 @@ span {
 }
 
 @media only screen and (max-width: 480px) {
-    .container{
+    .container {
+
+        .mobile-nav__container {
+            display: block;
+        }
+
         .landing-page__container {
+            .navbar {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
             .hero-container {
                 .hero__text {
                     width: 100%;
+
                     .hero__text__heading {
                         font-size: .7em;
                         text-align: center;
@@ -532,12 +619,15 @@ span {
                             margin-left: 0;
                         }
                     }
+
                     .hero__text__subheading {
                         text-align: center;
+
                         p {
                             text-align: center;
                             margin-left: 0;
                         }
+
                         #sub-sub__heading {
                             text-align: center;
                             margin-left: 0;
@@ -547,10 +637,11 @@ span {
                 }
             }
         }
+
         .gallery-container {
             .carousel-container {
                 width: 90vw;
-                
+
                 ul {
                     height: 300px;
                 }
@@ -559,6 +650,7 @@ span {
 
         .footer-container {
             width: auto;
+
             .about-container {
                 display: flex;
                 flex-direction: column;
@@ -575,16 +667,19 @@ span {
                     }
                 }
             }
+
             .contact-container {
                 .info-container {
                     p {
                         min-width: 100%;
                     }
                 }
+
                 .info-container {
                     p {
                         font-size: 1em;
                     }
+
                     .contacts {
                         font-size: .7em;
                     }
@@ -611,10 +706,12 @@ span {
                             font-size: 7em;
                         }
                     }
+
                     .hero__text__subheading {
                         p {
                             font-size: 1.2em;
                         }
+
                         #sub-sub__heading {
                             font-size: .8em;
                         }
@@ -629,6 +726,7 @@ span {
                     h2 {
                         font-size: .7em;
                     }
+
                     .hero__photo {
                         width: 100px;
 
