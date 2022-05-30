@@ -62,12 +62,12 @@ span {
 
 .container .mobile-nav__container ul li {
   width: 100%;
-  margin: 2em 0;
+  padding: 2em;
 }
 
 .container .mobile-nav__container ul li a {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   text-decoration: none;
   color: white;
 }
@@ -131,6 +131,7 @@ span {
 }
 
 .container .landing-page__container .mobile-nav {
+  display: none;
   margin-left: auto;
 }
 
@@ -660,9 +661,6 @@ span {
 }
 
 @media only screen and (max-width: 480px) {
-  .container .mobile-nav__container {
-    display: block;
-  }
   .container .landing-page__container .navbar {
     display: none;
   }

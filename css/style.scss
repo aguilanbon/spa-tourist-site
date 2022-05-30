@@ -57,11 +57,11 @@ span {
 
             li {
                 width: 100%;
-                margin: 2em 0;
+                padding: 2em;
 
                 a {
                     font-family: 'Open Sans', sans-serif;
-                    font-size: 3em;
+                    font-size: 2.5em;
                     text-decoration: none;
                     color: white;
 
@@ -117,7 +117,7 @@ span {
         }
 
         .mobile-nav {
-            // display: none;
+            display: none;
             margin-left: auto;
 
             i {
@@ -593,10 +593,6 @@ span {
 
 @media only screen and (max-width: 480px) {
     .container {
-
-        .mobile-nav__container {
-            display: block;
-        }
 
         .landing-page__container {
             .navbar {

@@ -12,122 +12,130 @@
 
 <body>
     <div class="container">
-        <div class="landing-page__container">
-            <div class="mobile-nav__container">
-                <i class="fas fa-solid fa-x">X</i>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="mobile-nav">
-                <i class="fas fa-solid fa-bars"></i>
-            </div>
-            <div class="hero-container">
-                <div class="hero__text">
-                    <div class="hero__text__heading">
-                        <h3>CORON<span>.</span></h3>
+        <section id="landing">
+            <div class="landing-page__container">
+                <div class="mobile-nav__container">
+                    <i class="fas fa-solid fa-x">X</i>
+                    <ul>
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#gallery">About</a></li>
+                        <li><a href="#about">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#gallery">About</a></li>
+                        <li><a href="#about">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fas fa-solid fa-bars"></i>
+                </div>
+                <div class="hero-container">
+                    <div class="hero__text">
+                        <div class="hero__text__heading">
+                            <h3>CORON<span>.</span></h3>
+                        </div>
+                        <div class="hero__text__subheading">
+                            <p>Leisure<span>.</span> Experience<span>.</span> Adventure</p>
+                            <p id="sub-sub__heading">Experience breath taking sceneries from dusk till dawn.</p>
+                        </div>
                     </div>
-                    <div class="hero__text__subheading">
-                        <p>Leisure<span>.</span> Experience<span>.</span> Adventure</p>
-                        <p id="sub-sub__heading">Experience breath taking sceneries from dusk till dawn.</p>
+                    <div class="hero__images">
+                        <div class="hero__photo">
+                            <img src="./images/dive.jpg" alt="">
+                            <h2 id="dive-in"></h2>
+                        </div>
+                        <div class="hero__photo2">
+                            <img src="./images/boat.jpg" alt="">
+                            <h2 id="ride-around"></h2>
+                        </div>
                     </div>
                 </div>
-                <div class="hero__images">
-                    <div class="hero__photo">
-                        <img src="./images/dive.jpg" alt="">
-                        <h2 id="dive-in"></h2>
-                    </div>
-                    <div class="hero__photo2">
-                        <img src="./images/boat.jpg" alt="">
-                        <h2 id="ride-around"></h2>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="gallery-container">
-            <div class="testimonial-container">
-                <h2><i style="font-size: 1.5em;" class="fas fa-quote-left"></i> It is <span>Switzerland</span> and
-                    <span>Africa</span> if
-                    they had a baby. <i style="font-size: 1.5em;" class="fas fa-quote-right"></i></h2>
+        </section>
 
-                <div class="author">
-                    <p> - Sun Tzu</p>
-                    <p id="title">Art of War</p>
-                </div>
-            </div>
-            <div class="carousel-container" data-carousel>
-                <button class="carousel-btns prev" id="prev" data-carousel-button="prev">
-                    < </button> <button class="carousel-btns next" id="next" data-carousel-button="next"> >
-                </button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="./images/1.jpg" alt="">
-                    </li>
-                    <li class="slide"> <img src="./images/2.jpg" alt="">
-                    </li>
-                    <li class="slide">
-                        <img src="./images/3.jpg" alt="">
-                    </li>
-                </ul>
+        <section id="gallery">
+            <div class="gallery-container">
+                <div class="testimonial-container">
+                    <h2><i style="font-size: 1.5em;" class="fas fa-quote-left"></i> It is <span>Switzerland</span> and
+                        <span>Africa</span> if
+                        they had a baby. <i style="font-size: 1.5em;" class="fas fa-quote-right"></i></h2>
 
-            </div>
-        </div>
-
-        <div class="footer-container">
-            <div class="about-container">
-                <div class="footer-box">
-                    <h3><i class="fas fa-hotel"></i> PLACES TO STAY</h3>
-                    <div class="hotel-container">
-                        <p>Coron Visitors Hotel</p>
-                        <p>Vienna Hotel</p>
-                        <p>Treetop Suites</p>
-                        <p>Two Seasons Coron Bayside Hotel</p>
-                        <p>Corto del Mar Hotel</p>
+                    <div class="author">
+                        <p> - Sun Tzu</p>
+                        <p id="title">Art of War</p>
                     </div>
                 </div>
-                <div class="footer-box">
-                    <h3><i class="fas fa-running"></i> THINGS TO DO</h3>
-                    <p>Island Tours</p>
-                    <p>Sunset Watching</p>
-                    <p>Hiking</p>
-                    <p>Snorkling & Diving</p>
-                    <p>Land Tours</p>
-                    <p>Private Islands</p>
-                    <p>Bar Hoppings</p>
-                </div>
-                <div class="footer-box">
-                    <h3><i class="fas fa-plane-departure"></i> GETTING HERE</h3>
-                    <p>Plane Ride: Manila to PPC -> Coron</p>
-                    <p>Plane Ride: Manila -> Coron </p>
-                    <p>Ferry Boat</p>
-                    <p>Inland: Bus & Vans</p>
+                <div class="carousel-container" data-carousel>
+                    <button class="carousel-btns prev" id="prev" data-carousel-button="prev">
+                        < </button> <button class="carousel-btns next" id="next" data-carousel-button="next"> >
+                    </button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./images/1.jpg" alt="">
+                        </li>
+                        <li class="slide"> <img src="./images/2.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="./images/3.jpg" alt="">
+                        </li>
+                    </ul>
+
                 </div>
             </div>
-            <div class="contact-container">
-                <h3>INFORMATION</h3>
-                <div class="info-container">
-                    <p>Contact us to make an inquiry or get more information about any tour or trip you are interested
-                        in. Our staff and operators will provide you with all the information you need about your future
-                        journey here in Coron, Palawan</p>
-                    <div class="contacts">
-                        <p><i class="fas fa-map-marker-alt"></i> Brgy. Coron, Coron, Palawan, Philippines</p>
-                        <p><i class="fas fa-phone-alt"></i> +63 999-232-1345</p>
-                        <p><i class="fas fa-fax"></i> FAX: 123-456-789</p>
-                        <p><i class="far fa-calendar-alt"></i> Monday - Sunday</p>
-                        <p><i class="fas fa-envelope"></i> coron@coronmail.com</p>
+        </section>
+        <section id="about">
+            <div class="footer-container">
+                <div class="about-container">
+                    <div class="footer-box">
+                        <h3><i class="fas fa-hotel"></i> PLACES TO STAY</h3>
+                        <div class="hotel-container">
+                            <p>Coron Visitors Hotel</p>
+                            <p>Vienna Hotel</p>
+                            <p>Treetop Suites</p>
+                            <p>Two Seasons Coron Bayside Hotel</p>
+                            <p>Corto del Mar Hotel</p>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <h3><i class="fas fa-running"></i> THINGS TO DO</h3>
+                        <p>Island Tours</p>
+                        <p>Sunset Watching</p>
+                        <p>Hiking</p>
+                        <p>Snorkling & Diving</p>
+                        <p>Land Tours</p>
+                        <p>Private Islands</p>
+                        <p>Bar Hoppings</p>
+                    </div>
+                    <div class="footer-box">
+                        <h3><i class="fas fa-plane-departure"></i> GETTING HERE</h3>
+                        <p>Plane Ride: Manila to PPC -> Coron</p>
+                        <p>Plane Ride: Manila -> Coron </p>
+                        <p>Ferry Boat</p>
+                        <p>Inland: Bus & Vans</p>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <h3>INFORMATION</h3>
+                    <div class="info-container">
+                        <p>Contact us to make an inquiry or get more information about any tour or trip you are
+                            interested
+                            in. Our staff and operators will provide you with all the information you need about your
+                            future
+                            journey here in Coron, Palawan</p>
+                        <div class="contacts">
+                            <p><i class="fas fa-map-marker-alt"></i> Brgy. Coron, Coron, Palawan, Philippines</p>
+                            <p><i class="fas fa-phone-alt"></i> +63 999-232-1345</p>
+                            <p><i class="fas fa-fax"></i> FAX: 123-456-789</p>
+                            <p><i class="far fa-calendar-alt"></i> Monday - Sunday</p>
+                            <p><i class="fas fa-envelope"></i> coron@coronmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <footer>
             <i class="fab fa-github"></i> github.com/aguilanbon - Bon Aguilan Simpol Apps 2022
         </footer>

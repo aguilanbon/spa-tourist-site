@@ -45,3 +45,17 @@ btns.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
+
+
+const hamburgerBtn = document.querySelector('.mobile-nav i')
+const mobileNav = document.querySelector('.mobile-nav__container')
+
+
+hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.style.display = 'none'
+    mobileNav.style.display = 'block'
+})
+document.querySelector('.mobile-nav__container i').addEventListener('click', () => {
+    mobileNav.style.display = 'none'
+    hamburgerBtn.style.display = 'block'
+})
