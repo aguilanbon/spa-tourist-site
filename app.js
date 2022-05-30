@@ -59,3 +59,14 @@ document.querySelector('.mobile-nav__container i').addEventListener('click', () 
     mobileNav.style.display = 'none'
     hamburgerBtn.style.display = 'block'
 })
+
+const ul = document.querySelector('.mobile-nav__container ul')
+
+const arr = ul.childNodes
+
+arr.forEach(el => {
+    el.addEventListener('click', () => {
+        mobileNav.style.display = 'none'
+        hamburgerBtn.style.display = 'block'
+    })
+})
